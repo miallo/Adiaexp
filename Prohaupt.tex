@@ -166,6 +166,8 @@ Betreuer: & Martin Ochmann\\
 \section{Einleitung}
 \label{sec:einleitung}
 Der Adiabatenexponent ist ein wichtiges Kennzeichen von Gasen.
+Er beschreibt das Verhältnis des Wärmespeicherkoeffizienten bei konstantem Druck zu dem mit konstantem Volumen.
+In der Regel wird er mit $\kappa$ bezeichnet.
 
 \section{Theorie}
 \label{sec:theorie}
@@ -175,20 +177,44 @@ Der Adiabatenexponent ist ein wichtiges Kennzeichen von Gasen.
 
 \section{Auswertung}
 \label{sec:auswertung}
+\subsection{Messung nach Rüchard}
+Die aufbauspezifischen Daten unseres Versuchs lauten:
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		Messgröße	& Messwert\\\hline\hline
+		Masse		& $m=4.88$ g\\\hline
+		Durchmesser	& $d=9.97$ mm\\\hline
+		Volumen		& $V=2300.45$ cm$^3$\\\hline
+		Luftdruck	& $b_1=1015.8$ hPa\\
+		- nachher	& $b_2=1015.5$ hPa\\\hline
+		Temperatur	& $T_1=25.9^\circ$ C\\
+		- nachher	& $T_2=23.6^\circ$ C\\\hline
+	\end{tabular}
+	\caption{Versuchsspezifische Größen}\label{tab:versgr}
+\end{table}
 
 \begin{table}[!htbp]
-\centering
-\begin{tabular}{|c|l|c|}
-\hline
-CO$_2$	& $4.8983 \pm 0.0005$ & $1021.81 \pm 0.10$ \\\hline
-Argon	& $4.8917 \pm 0.0005$ & $1021.80 \pm 0.10$ \\\hline
-Luft	& $4.8964 \pm 0.0005$ & $1021.80 \pm 0.10$ \\\hline
-\end{tabular}
-\caption{Hier sollte ein Titel stehen xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx} \label{tab:position}
+	\centering
+	\begin{tabular}{|l|c|c|}
+		\hline
+		Gas	& $m_\text{eff}$ [g]		& $p$ [hPa]\\\hline\hline
+		CO$_2$	& $4.8983 \pm 0.0005$ 	& $1021.81 \pm 0.10$ \\\hline
+		Argon	& $4.8917 \pm 0.0005$ 	& $1021.80 \pm 0.10$ \\\hline
+		Luft	& $4.8964 \pm 0.0005$ 	& $1021.80 \pm 0.10$ \\\hline
+	\end{tabular}
+	\caption{Effektive Masse zu den einzelnen Gasen und die daraus resultierenden Drücke} \label{tab:position}
 \end{table}
+
+\subsection{Messung nach Clement-Desormes}
+
+
 \section{Diskussion}
 \label{sec:diskussion}
-
+In der Tabelle der versuchsspezifischen Größen \ref{tab:versgr} fällt auf, dass sich die Temperatur im Versuchsraum während der Messungen um über $2^\circ$ C geändert hat.
+Dies verfälscht die Messwerte, so dass für zukünftige Messungen empfehlenswert ist, zumindest die Fenster zu schließen, so unangenehm dies auch ist.
+Noch besser wäre allerdings ein klimatisierter Raum.
 
 
 \bibliography{literatur}
