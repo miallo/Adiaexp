@@ -14,11 +14,11 @@ $PROG: $(OBJECTS)
 	$(CC) $(CFLAGS) -c $< -o $@
 	./main
 
-Adiabaten.pdf: Adiabaten.tex
-	pdflatex Adiabaten.tex
-	bibtex Adiabaten
-	pdflatex Adiabaten.tex
-	pdflatex Adiabaten.tex
+Prohaupt.pdf: Prohaupt.tex
+	pdflatex Prohaupt.tex
+	bibtex Prohaupt
+	pdflatex Prohaupt.tex
+	pdflatex Prohaupt.tex
 
 clean: 
-	rm -f $(PROG) *.o
+	rm -f $(PROG) *.o *.toc *.log
