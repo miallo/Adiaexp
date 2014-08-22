@@ -19,6 +19,7 @@ Prohaupt.pdf: Prohaupt.tex
 	bibtex Prohaupt
 	pdflatex Prohaupt.tex
 	pdflatex Prohaupt.tex
+	rm -f $(PROG) *.o *.toc *.log *.aux *.bbl *.bgl
 
 clean: 
-	rm -f $(PROG) *.o *.toc *.log
+	rm -f $(PROG) *.o *.toc *.log *.aux *.bbl *.bgl

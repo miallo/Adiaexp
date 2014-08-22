@@ -166,7 +166,7 @@ Betreuer: & Martin Ochmann\\
 \section{Einleitung}
 \label{sec:einleitung}
 Der Adiabatenexponent ist ein wichtiges Kennzeichen von Gasen.
-Er beschreibt das Verhältnis des Wärmespeicherkoeffizienten bei konstantem Druck zu dem mit konstantem Volumen.
+Er beschreibt das Verhältnis des Wärmespeicherkoeffizienten bei konstantem Druck zu dem mit konstantem Volumen (\cite[S. 263]{gerthsen}).
 In der Regel wird er mit $\kappa$ bezeichnet.
 
 \section{Theorie}
@@ -194,18 +194,32 @@ Die aufbauspezifischen Daten unseres Versuchs lauten:
 	\end{tabular}
 	\caption{Versuchsspezifische Größen}\label{tab:versgr}
 \end{table}
-
+Da beim schwingenden Gewicht in der Röhre zusätzlich noch das sich darin befindliche Gas bewegt werden muss, ist die effektive Masse $m_\text{eff}$ höher:
+\begin{align*}
+	m_\text{eff}&=m+\rho_L \cdot A\cdot l\\
+	\sigma_{m_\text{eff}}&=\sigma_l\cdot \rho_l \cdot A
+\end{align*}
+Der daraus resultierende Druck $p$ wird durch
+\begin{align*}
+	p&=b+\frac{m_\text{eff}g}{A}\\
+	\sigma_p&=\sqrt{\sigma_b^2+\sigma_{m_\text{eff}}^2\left(\frac{g}{A}\right)^2}
+\end{align*}
+berechnet.
+Die Werte für unseren Versuch sind in Tabelle \ref{tab:effm} dargestellt.
 \begin{table}[!htbp]
 	\centering
 	\begin{tabular}{|l|c|c|}
 		\hline
-		Gas	& $m_\text{eff}$ [g]		& $p$ [hPa]\\\hline\hline
+		Gas	& $m_\text{eff}$ [g]	& $p$ [hPa]\\\hline\hline
 		CO$_2$	& $4.8983 \pm 0.0005$ 	& $1021.81 \pm 0.10$ \\\hline
 		Argon	& $4.8917 \pm 0.0005$ 	& $1021.80 \pm 0.10$ \\\hline
 		Luft	& $4.8964 \pm 0.0005$ 	& $1021.80 \pm 0.10$ \\\hline
 	\end{tabular}
-	\caption{Effektive Masse zu den einzelnen Gasen und die daraus resultierenden Drücke} \label{tab:position}
+	\caption{Effektive Masse zu den einzelnen Gasen und die daraus resultierenden Drücke} \label{tab:effm}
 \end{table}
+
+
+
 
 \subsection{Messung nach Clement-Desormes}
 
