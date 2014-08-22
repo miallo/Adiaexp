@@ -172,8 +172,10 @@ In der Regel wird er mit $\kappa$ bezeichnet.
 \section{Theorie}
 \label{sec:theorie}
                                                                                                                                                                       
+
 \section{Durchführung}
 \label{sec:durchfuehrung}
+
 
 \section{Auswertung}
 \label{sec:auswertung}
@@ -192,7 +194,8 @@ Die aufbauspezifischen Daten unseres Versuchs lauten:
 		Temperatur	& $T_1=25.9^\circ$ C\\
 		- nachher	& $T_2=23.6^\circ$ C\\\hline
 	\end{tabular}
-	\caption{Versuchsspezifische Größen}\label{tab:versgr}
+	\caption{Versuchsspezifische Größen}
+	\label{tab:versgr}
 \end{table}
 Da beim schwingenden Gewicht in der Röhre zusätzlich noch das sich darin befindliche Gas bewegt werden muss, ist die effektive Masse $m_\text{eff}$ höher:
 \begin{align*}
@@ -215,13 +218,48 @@ Die Werte für unseren Versuch sind in Tabelle \ref{tab:effm} dargestellt.
 		Argon	& $4.8917 \pm 0.0005$ 	& $1021.80 \pm 0.10$ \\\hline
 		Luft	& $4.8964 \pm 0.0005$ 	& $1021.80 \pm 0.10$ \\\hline
 	\end{tabular}
-	\caption{Effektive Masse zu den einzelnen Gasen und die daraus resultierenden Drücke} \label{tab:effm}
+	\caption{Effektive Masse zu den einzelnen Gasen und die daraus resultierenden Drücke} 
+	\label{tab:effm}
+\end{table}
+
+\begin{align*}
+	\kappa&=\frac{4\pi^2 \cdot m_{\text{eff}}\cdot V }{T^{2} \cdot p \cdot d^{4}}\\
+	\sigma_{\kappa}&=\frac{4\pi^2 ~ V}{T^{3}  d^{4}  p^{2}} \cdot \sqrt{\left(T  m_{\text{eff}}\right)^2 \cdot \sigma_{p}^{2} + \left(T  p\right)^2 \cdot \sigma_{m_{\text{eff}}}^{2} + \left(2m_{\text{eff}}~p\right)^{2} \cdot \sigma_{T}^{2}}
+\end{align*}
+
+\begin{table}
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Gas 	&Schwingungen & Periodendauer [ms] & $\kappa$ \\\hline\hline
+
+			& 1 	& $762.1 \pm 1.1$	& $0.7587 \pm 0.0021$ \\
+			& 10 	& $762.23 \pm 0.24$ 	& $0.7584 \pm 0.0005$ \\
+		CO$_2$	& 20 	& $763.29 \pm 0.11$ 	& $0.75629 \pm 0.00025$ \\
+			& 50 	& $763.39 \pm 0.12$ 	& $0.75610 \pm 0.00026$ \\
+			& 100 	& $762.70 \pm 0.22$	& $0.7575 \pm 0.0004$ \\\hline
+	
+			& 1 	& $685.8 \pm 1.0$	& $0.9356 \pm 0.0028$ \\
+			& 10	& $686.5 \pm 0.4$	& $0.9338 \pm 0.0012$ \\
+		Argon	& 20	& $686.48 \pm 0.27$	& $0.9337 \pm 0.0008$ \\
+			& 50	& $686.48 \pm 0.15$	& $0.9338 \pm 0.0004$ \\
+			& 100	& $686.33 \pm 0.06$	& $0.93416 \pm 0.00021$ \\\hline
+	
+			& 1	& $737.4 \pm 1.0$	& $0.8100 \pm 0.0023$ \\
+			& 10	& $737.4 \pm 0.4$	& $0.8101 \pm 0.0008$ \\
+		Luft	& 20	& $737.96 \pm 0.25$	& $0.8088 \pm 0.0006$ \\
+			& 50	& $738.6 \pm 0.5$	& $0.8074 \pm 0.0012$ \\
+			& 100	& $739.1 \pm 0.5$	& $0.8063 \pm 0.0012$ \\\hline
+	\end{tabular}
+	\caption{Schwingungszeiten unterschiedlicher Gase}
+	\label{tab:schwingungszeit}
 \end{table}
 
 
-
-
 \subsection{Messung nach Clement-Desormes}
+
+
+
 
 
 \section{Diskussion}
