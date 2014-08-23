@@ -235,49 +235,54 @@ Die Werte für unseren Versuch sind in Tabelle \ref{tab:effm} dargestellt.
 		\hline
 		Gas 	&Schwingungen & Periodendauer [ms] & $\kappa$ \\\hline\hline
 
-			& 1 	& $762.1 \pm 1.1$	& $0.7587 \pm 0.0021$ \\
-			& 10 	& $762.23 \pm 0.24$ 	& $0.7584 \pm 0.0005$ \\
-		CO$_2$	& 20 	& $763.29 \pm 0.11$ 	& $0.75629 \pm 0.00025$ \\
-			& 50 	& $763.39 \pm 0.12$ 	& $0.75610 \pm 0.00026$ \\
-			& 100 	& $762.70 \pm 0.22$	& $0.7575 \pm 0.0004$ \\\hline
+			& 1 	& $762.1 \pm 1.1$	& \\%%%%%%%%%%%%%%%%%%%%%%%%% Hier war falsche Formel
+			& 10 	& $762.23 \pm 0.24$ 	& \\
+		CO$_2$	& 20 	& $763.29 \pm 0.11$ 	& \\
+			& 50 	& $763.39 \pm 0.12$ 	& \\
+			& 100 	& $762.70 \pm 0.22$	& \\\hline
 	
-			& 1 	& $685.8 \pm 1.0$	& $0.9356 \pm 0.0028$ \\
-			& 10	& $686.5 \pm 0.4$	& $0.9338 \pm 0.0012$ \\
-		Argon	& 20	& $686.48 \pm 0.27$	& $0.9337 \pm 0.0008$ \\
-			& 50	& $686.48 \pm 0.15$	& $0.9338 \pm 0.0004$ \\
-			& 100	& $686.33 \pm 0.06$	& $0.93416 \pm 0.00021$ \\\hline
+			& 1 	& $685.8 \pm 1.0$	& \\
+			& 10	& $686.5 \pm 0.4$	& \\
+		Argon	& 20	& $686.48 \pm 0.27$	& \\
+			& 50	& $686.48 \pm 0.15$	& \\
+			& 100	& $686.33 \pm 0.06$	& \\\hline
 	
-			& 1	& $737.4 \pm 1.0$	& $0.8100 \pm 0.0023$ \\
-			& 10	& $737.4 \pm 0.4$	& $0.8101 \pm 0.0008$ \\
-		Luft	& 20	& $737.96 \pm 0.25$	& $0.8088 \pm 0.0006$ \\
-			& 50	& $738.6 \pm 0.5$	& $0.8074 \pm 0.0012$ \\
-			& 100	& $739.1 \pm 0.5$	& $0.8063 \pm 0.0012$ \\\hline
+			& 1	& $737.4 \pm 1.0$	& \\
+			& 10	& $737.4 \pm 0.4$	& \\
+		Luft	& 20	& $737.96 \pm 0.25$	& \\
+			& 50	& $738.6 \pm 0.5$	& \\
+			& 100	& $739.1 \pm 0.5$	& \\\hline
 	\end{tabular}
 	\caption{Schwingungszeiten unterschiedlicher Gase und die resultierenden $\kappa$}
 	\label{tab:schwingungszeit}
 \end{table}
 
-\begin{table}[!htb]
-	\centering
-	\begin{tabular}{|c|c|}
-		\hline
-		Öffnungszeit [s] & $\kappa$\\\hline
-		0.1 & $1.130 \pm 0.014$\\
-		1.0 & $1.133 \pm 0.013$\\
-		5.0 & $1.106 \pm 0.014$\\
-		\hline
-	\end{tabular}
-	\caption{Gew. Mittelwerte von $\kappa$ zu den jeweiligen Öffnungszeiten}
-	\label{tab:kappaclement}
-\end{table}
+
+
+\subsection{Messung nach Clement-Desormes}
+
+Da gilt $\kappa=\frac{\Delta p_1}{\Delta p_1-\Delta p_2}$ folgt aus der Proportionalität des Drucks zur Steighöhe (nach \ref[S. 457]{giancoli} gilt: $p=\rho g h$):
 
 \begin{align*}
 	\kappa&=\frac{\Delta h_{1}}{\Delta h_{1} - \Delta h_{2}}\\
 	\sigma_{\kappa}&=\frac{1}{\left(\Delta h_{1} - \Delta h_{2}\right)^{2}} \cdot \sqrt{\Delta h_{1}^{2} \cdot \sigma_{\Delta h_2}^{2} + \Delta h_{2}^{2} \cdot \sigma_{\Delta h_1}^{2}}
 \end{align*}
 
-\subsection{Messung nach Clement-Desormes}
+Für unsere Messwerte haben wir die gewichteten Mittelwerte in Tabelle \ref{tab:kappaclement} vermerkt.
 
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		Öffnungszeit [s] & $\kappa$\\\hline
+		0.1 & \\%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Hier war falsche Formel
+		1.0 & \\
+		5.0 & \\
+		\hline
+	\end{tabular}
+	\caption{Gew. Mittelwerte von $\kappa$ zu den jeweiligen Öffnungszeiten}
+	\label{tab:kappaclement}
+\end{table}
 
 
 \section{Diskussion}
