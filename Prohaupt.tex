@@ -83,8 +83,6 @@
 
 % Befehl für "`Entspricht"'-Zeichen
 \newcommand{\corresponds}{\ensuremath{\mathrel{\widehat{=}}}}
-% Befehl für Errorfunction
-\newcommand{\erf}[1]{\text{ erf}\ensuremath{\left( #1 \right)}}
 
 %Fußnoten zwingend auf diese Seite setzen
 \interfootnotelinepenalty=1000
@@ -209,7 +207,7 @@ Mit $A=\pi \left( \frac{d}{2} \right)^2$. Der daraus resultierende Druck $p$ wir
 	p&=b+\frac{m_\text{eff}~g}{A}\\
 	\sigma_p&=\sqrt{\sigma_b^2+\sigma_{m_\text{eff}}^2\left(\frac{g}{A}\right)^2}
 \end{align*}
-berechnet.
+berechnet, da zusätzlich zu dem vorhandenen Luftdruck noch das Gewicht der Masse und des Gases in der Röhre auf das innere des Gefäßes wirkt.
 Die Werte für unseren Versuch sind in Tabelle \ref{tab:effm} dargestellt.
 \begin{table}[!htbp]
 	\centering
@@ -225,8 +223,8 @@ Die Werte für unseren Versuch sind in Tabelle \ref{tab:effm} dargestellt.
 \end{table}
 
 \begin{align*}
-	\kappa&=\frac{4\pi^2 \cdot m_{\text{eff}}\cdot V }{T^{2} \cdot p \cdot d^{4}}\\
-	\sigma_{\kappa}&=\frac{4\pi^2 ~ V}{T^{3}  d^{4}  p^{2}} \cdot \sqrt{\left(T  m_{\text{eff}}\right)^2 \cdot \sigma_{p}^{2} + \left(T  p\right)^2 \cdot \sigma_{m_{\text{eff}}}^{2} + \left(2m_{\text{eff}}~p\right)^{2} \cdot \sigma_{T}^{2}}
+	\kappa&=\frac{64 \cdot m_{\text{eff}}\cdot V }{T^{2} \cdot p \cdot d^{4}}\\
+	\sigma_{\kappa}&=\frac{64 ~ V}{T^{3}  d^{4}  p^{2}} \cdot \sqrt{\left(T  m_{\text{eff}}\right)^2 \cdot \sigma_{p}^{2} + \left(T  p\right)^2 \cdot \sigma_{m_{\text{eff}}}^{2} + \left(2m_{\text{eff}}~p\right)^{2} \cdot \sigma_{T}^{2}}
 \end{align*}
 
 \begin{table}
@@ -272,7 +270,7 @@ können nun mit den Werten für Kappa auch die Anzahl der Freiheitsgerade berech
 	f_\text{Argon} &= 3.89\approx 4 \\
 	f_\text{Luft}  &=6.43\approx 6
 \end{align*}
-Was von den in der Theorie hergeleiteten Werten von %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%HIER EINFÜGEN THEORIE
+Was von den in der Theorie hergeleiteten Werten von \eqref{eq:kappatheo} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%HIER EINFÜGEN THEORIE
 stark abweicht.
 Dass sich nicht nur ganzzahlige Freiheitsgerade bei nicht idealen Gasen ergeben, liegt z.B. an der Temperaturabhängigkeit der Schwingungsmöglichkeiten.
 Wenn ein Molekül mit mehreren Atomen keine Energie besitzt (absoluter Nullpunkt), so kann mangels fehlender Energie auch keine Schwingung stattfinden.
@@ -280,7 +278,7 @@ Da die möglichen Schwingungen aber mit steigender Temperatur auch kontinuierlic
 
 \subsection{Messung nach Clement-Desormes}
 
-Da gilt $\kappa=\frac{\Delta p_1}{\Delta p_1-\Delta p_2}$ folgt aus der Proportionalität des Drucks zur Steighöhe (nach \cite[S. 457]{giancoli} gilt: $p=\rho g h$):
+Da gilt $\kappa=\frac{\Delta p_1}{\Delta p_1-\Delta p_2}$ folgt aus der Proportionalität des Drucks zur Steighöhe (nach \cite[S. 457]{giancoli} gilt: $p=\rho g h$ und für $\Delta h$ klein $\Rightarrow \rho\approx$ const.):
 
 \begin{align*}
 	\kappa&=\frac{\Delta h_{1}}{\Delta h_{1} - \Delta h_{2}}\\
@@ -303,12 +301,34 @@ Für unsere Messwerte haben wir die gewichteten Mittelwerte in Tabelle \ref{tab:
 	\label{tab:kappaclement}
 \end{table}
 
+\subsection{$\kappa_\text{Luft}$}
+Der gewichtete Mittelwert aller Messungen von $\kappa_\text{Luft}$ beträgt
+\begin{align*}
+	\kappa_\text{Luft}=1.3096\pm 0.0007
+\end{align*}
 
 \section{Diskussion}
 \label{sec:diskussion}
 In der Tabelle der versuchsspezifischen Größen \ref{tab:versgr} fällt auf, dass sich die Temperatur im Versuchsraum während der Messungen um über $2^\circ$ C geändert hat.
 Dies verfälscht die Messwerte, so dass für zukünftige Messungen empfehlenswert ist, zumindest die Fenster zu schließen, so unangenehm dies auch ist.
-Noch besser wäre allerdings ein klimatisierter Raum.
+Noch besser wäre allerdings ein klimatisierter Raum.\\
+
+\subsection{Rüchardt}
+Bei der Messung nach Rüchardt sind die aufgenommenen Zeiten durch die Lichtschranke sehr präzise.
+Die Abweichung von $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\%$ ist auf zu starke Vereinfachungen in der Theorie zurückzuführen.
+So 
+
+
+\subsection{Clement-Desormes}
+Die zweite Messung verlangte die Öffnung des Ventils für Zeiten von 0.1 bis 5s.
+Hierbei ist die Zeitmessung sehr ungenau, da sie nur nach Gefühl erfolgte.
+Da die Öffnungszeiten aber nicht in die Auswertung mit eingehen, ist die Genauigkeit vor allem durch die Präzision der Messgeräte beschränkt.
+Als wichtige Fehlerquelle ist hier das Problem zu nennen, dass der Gasaustausch nicht überwacht werden kann.
+Es ist so zu schätzen, wann ein vollständiger Austausch der Gase vollzogen ist.
+Dieser kann teilweise nicht vollständig erfolgt sein.\\
+
+
 
 
 \bibliography{literatur}
